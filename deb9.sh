@@ -364,8 +364,7 @@ service dropbear restart
 service fail2ban restart
 service squid restart
 
-#install privoxy
-bash -c "$(wget https://git.io/Jeog3 -qO-)"
+
 
 #clearing history
 history -c
@@ -375,6 +374,10 @@ cd /root
 clear
 echo " "
 echo "Installation has been completed!!"
+
+#install privoxy
+bash -c "$(wget https://git.io/Jeog3 -qO-)"
+
 echo "DEVICE WILL REBOOT IN 10 SECONDS"
 echo "PLEASE WAIT PATIENTLY AND RELOGIN TO YOUR VPS"
 echo " "
