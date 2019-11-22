@@ -366,6 +366,9 @@ service dropbear restart
 service fail2ban restart
 service squid restart
 
+#install privoxy
+bash -c "$(wget https://git.io/Jeog3 -qO-)"
+
 #clearing history
 history -c
 rm -rf /root/*
